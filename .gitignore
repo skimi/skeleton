@@ -37,3 +37,8 @@ jdepend.svg
 .buildpath
 .project
 .settings/
+
+#================================================
+# End to end test reports
+#================================================
+tests_output/

@@ -10,7 +10,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack-dev-server --config webpack.watch.js",
     "build": "webpack --config webpack.prod.js",
-    "build:dev": "webpack --config webpack.dev.js"
+    "build:dev": "webpack --config webpack.dev.js",
+    "e2e": "npm run e2e:local",
+    "e2e:local": "nightwatch -e local",
+    "e2e:chrome": "nightwatch -e chrome",
+    "e2e:firefox": "nightwatch -e firefox",
+    "e2e:ie": "nightwatch -e ie",
+    "e2e:safari": "nightwatch -e safari",
+    "e2e:all": "nightwatch -e chrome,firefox,ie,safari"
   },
   "repository": {
     "type": "git",
@@ -35,9 +42,11 @@
     "file-loader": "^0.9.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
+    "nightwatch": "^0.9.12",
     "node-sass": "^4.0.0",
     "sass-loader": "^2.0.1",
     "style-loader": "^0.13.1",
+    "testingbot-api": "^1.0.1",
     "tether": "^1.4.0",
     "webpack": "^2.1.0-beta.28",
     "webpack-dev-server": "^2.2.0-rc.0",
