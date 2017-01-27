@@ -32,3 +32,13 @@ See home page at http://localhost:82
 ## Asset management
 
 See [Asset management](assets/readme.md).
+
+## Accessibility tests
+
+You can run the following command to test a page:
+
+```
+make a11y -- <YOUR_URL>
+```
+
+The command will quickly test your page using HTMLCS rules but it also launch an instance of [asqatasun](http://asqatasun.org/) that you can access through its portal (the command will give you the url).

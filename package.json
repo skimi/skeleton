@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack-dev-server --config webpack.watch.js",
     "build": "webpack --config webpack.prod.js",
-    "build:dev": "webpack --config webpack.dev.js"
+    "build:dev": "webpack --config webpack.dev.js",
+    "pa11y": "pa11y"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
     "node-sass": "^4.0.0",
+    "pa11y": "^4.5.0",
     "sass-loader": "^2.0.1",
     "style-loader": "^0.13.1",
     "tether": "^1.4.0",
